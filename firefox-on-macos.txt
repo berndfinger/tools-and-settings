@@ -5,6 +5,8 @@ Why?
   on a German keyboard as <AltGr> on a industry standard PC, and <AltGr>q creates a "@" symbol by default on such a PC (Linux and Windows).
   So it can happen that you want to enter a "@" symbol as part of an email, and by accident, when pressing the industry standard keys on a Apple
   computer, your browser quits instantanteously. As a consequence, all your data in all your browser tabs will be lost.
+  Activating the "Warn you when quitting the browser" setting in Preferences -> General -> Startup does not cause Firefox to create a warning popup
+  after hitting <cmd>q.
 Affected version(s):
   78.2.0esr (64-bit) and many previous versions as well
 Solution in:
