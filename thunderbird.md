@@ -1,6 +1,7 @@
 What to do:
   Install extension tbkeys-lite (https://addons.thunderbird.net/thunderbird/downloads/latest/tbkeys-lite/addon-987885-latest.xpi?src=search)
   and configure Preferences in Main key bindings as follows:
+```
 {
 "0": "unset",
 "j": "unset",
@@ -22,13 +23,18 @@ What to do:
 "]": "unset",
 "[": "unset"
 }
+```
+
 Why?
   Thunderbird by default has certain single key bindings which can cause unwanted destructive actions
   (e.g. archive an email thread), for example if a user wants to search for a string and the cursor
   is not or no longer in the quick search bar.
+
 Affected version(s):
   All recent, e.g. 78.4.0
+
 Solution in:
   https://bugzilla.mozilla.org/show_bug.cgi?id=615957#c78
+
 Sample search engine search texts for displaying related bugs:
   thunderbird bug "disable single-key shortcuts"
