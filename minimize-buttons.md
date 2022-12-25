@@ -2,6 +2,6 @@ For getting back the minimize button in Firefox and Nautilus and maybe other app
 `# gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,close"`
 
 For also showing the maximize button, run:
-´# gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"`
+`# gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"`
 
 The change will become effective immediately, without having to restart the applications.
