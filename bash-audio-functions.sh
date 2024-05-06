@@ -18,19 +18,27 @@
 # limitations under the License.
 
 function spk {
-   _PERC=$1
-   if [[ ${_PERC}. == "+." ]]; then
+   _ARG=$1
+   if [[ ${_ARG}. == "+." ]]; then
+      pactl set-sink-volume @DEFAULT_SINK@ +5%
+   elif [[ ${_ARG}. == "++." ]]; then
       pactl set-sink-volume @DEFAULT_SINK@ +10%
-   elif [[ ${_PERC}. == "-." ]]; then
+   elif [[ ${_ARG}. == "+++." ]]; then
+      pactl set-sink-volume @DEFAULT_SINK@ +20%
+   elif [[ ${_ARG}. == "-." ]]; then
+      pactl set-sink-volume @DEFAULT_SINK@ -5%
+   elif [[ ${_ARG}. == "--." ]]; then
       pactl set-sink-volume @DEFAULT_SINK@ -10%
-   elif [[ ${_PERC}. == "off." || ${_PERC}. == "mute." ]]; then
+   elif [[ ${_ARG}. == "---." ]]; then
+      pactl set-sink-volume @DEFAULT_SINK@ -20%
+   elif [[ ${_ARG}. == "off." || ${_ARG}. == "mute." ]]; then
       pactl set-sink-mute @DEFAULT_SINK@ 1
-   elif [[ ${_PERC}. == "on." || ${_PERC}. == "unmute." ]]; then
+   elif [[ ${_ARG}. == "on." || ${_ARG}. == "unmute." ]]; then
       pactl set-sink-mute @DEFAULT_SINK@ 0
-   elif [[ ${_PERC}. == ".." ]]; then
+   elif [[ ${_ARG}. == ".." ]]; then
       pactl set-sink-mute @DEFAULT_SINK@ toggle
-   elif [[ ${_PERC}. != "." ]]; then
-      pactl set-sink-volume @DEFAULT_SINK@ ${_PERC}%
+   elif [[ ${_ARG}. != "." ]]; then
+      pactl set-sink-volume @DEFAULT_SINK@ ${_ARG}%
    fi
    pactl get-sink-volume @DEFAULT_SINK@ | \
    awk '/^Volume:/{
@@ -45,19 +53,27 @@ function spk {
 
 function mic {
    _DEFAULT_SOURCE=$(pactl get-default-source)
-   _PERC=$1
-   if [[ ${_PERC}. == "+." ]]; then
+   _ARG=$1
+   if [[ ${_ARG}. == "+." ]]; then
+      pactl set-source-volume ${_DEFAULT_SOURCE} +5%
+   elif [[ ${_ARG}. == "++." ]]; then
       pactl set-source-volume ${_DEFAULT_SOURCE} +10%
-   elif [[ ${_PERC}. == "-." ]]; then
+   elif [[ ${_ARG}. == "+++." ]]; then
+      pactl set-source-volume ${_DEFAULT_SOURCE} +20%
+   elif [[ ${_ARG}. == "-." ]]; then
+      pactl set-source-volume ${_DEFAULT_SOURCE} -5%
+   elif [[ ${_ARG}. == "--." ]]; then
       pactl set-source-volume ${_DEFAULT_SOURCE} -10%
-   elif [[ ${_PERC}. == "off." || ${_PERC}. == "mute." ]]; then
+   elif [[ ${_ARG}. == "---." ]]; then
+      pactl set-source-volume ${_DEFAULT_SOURCE} -20%
+   elif [[ ${_ARG}. == "off." || ${_ARG}. == "mute." ]]; then
       pactl set-source-mute ${_DEFAULT_SOURCE} 1
-   elif [[ ${_PERC}. == "on." || ${_PERC}. == "unmute." ]]; then
+   elif [[ ${_ARG}. == "on." || ${_ARG}. == "unmute." ]]; then
       pactl set-source-mute ${_DEFAULT_SOURCE} 0
-   elif [[ ${_PERC}. == ".." ]]; then
+   elif [[ ${_ARG}. == ".." ]]; then
       pactl set-source-mute ${_DEFAULT_SOURCE} toggle
-   elif [[ ${_PERC}. != "." ]]; then
-      pactl set-source-volume ${_DEFAULT_SOURCE} ${_PERC}%
+   elif [[ ${_ARG}. != "." ]]; then
+      pactl set-source-volume ${_DEFAULT_SOURCE} ${_ARG}%
    fi
    pactl get-source-volume ${_DEFAULT_SOURCE} | \
    awk '/^Volume:/{
