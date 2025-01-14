@@ -1,8 +1,8 @@
-**What to do**
+**What to do**: 
   Show or hide the bookmarks taskbar
 
 **How?**
-  - use <shift><ctrl>b to switch between showing the bookmarks bar and hiding it
+  - use `<shift><ctrl>b` to switch between showing the bookmarks bar and hiding it
 
 **Why?**
   It's time consuming to use the right mouse key when hovering over the boopkmars bar (for hiding it) and to use
