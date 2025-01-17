@@ -19,5 +19,5 @@
 **Solution in**:
   https://unix.stackexchange.com/questions/2919/kill-an-unresponsive-ssh-session-without-closing-the-terminal
 
-**Sample search engine search texts**:
+**Sample search engine search text(s)**:
   "how to get out of a hanging terminal session without closing the terminal window?"
