@@ -1,5 +1,7 @@
-**What to do**:
-  1. Install the lsof program if not already done
+**What to do**: Kill a remote ssh session without closing the terminal in which it is running
+
+**How**:
+  1. Install the `lsof` program/package if not already done
   2. Run `lsof -Pni :22` to display all processes with an active ssh connection (port 22).
      This shows the remote IP addresses in the last output column, "NAME".
   4. Kill those processes which are related to the hanging sessions. The input prompt
