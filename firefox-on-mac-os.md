@@ -1,4 +1,6 @@
-What to do:
+**What to do**: Avoid Firefox to unconditionally quit after trying to enter the `@` symbol in a web input form 
+
+**How**:
   In about:config , toggle browser.warnOnQuit from false to true
 
 Why:
