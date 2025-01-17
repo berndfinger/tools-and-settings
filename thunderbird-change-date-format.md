@@ -19,4 +19,4 @@
 
 **Solution in**: https://enterprise.thunderbird.net/manage-updates-policies-and-customization/thunderbird-preferences-enterprise/customize-thunderbirds-date-and-time-formats
 
-**Sample search engine search texts for displaying related bugs**: `thunderbird change date format in tasks`
+**Sample search engine search text(s)**: `thunderbird change date format in tasks`
