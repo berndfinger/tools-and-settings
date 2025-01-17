@@ -1,5 +1,5 @@
 **What to do**: 
-  Show or hide the bookmarks taskbar
+  Show or hide the browser's bookmarks taskbar (e.g. Chrome, Firefox)
 
 **How?**
   - use `<shift><ctrl>b` to switch between showing the bookmarks bar and hiding it
