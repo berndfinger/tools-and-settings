@@ -9,7 +9,7 @@
 
 **Why?**
   If a remote ssh session is getting unresponsive (e.g. after getting back from a system sleep),
-  instead of closing the terminal window (all terminal output will be lost) and opening a new
+  instead of closing the terminal window (resulting in the loss of all terminal output) and opening a new
   terminal, this method can be used to get back the prompt in the existing terminals, keeping
   all previous terminal output 
 
