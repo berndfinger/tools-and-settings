@@ -12,3 +12,4 @@ Collection of various tools and settings
 | [thunderbird-change-date-format.md](https://github.com/berndfinger/tools-and-settings/blob/main/thunderbird-change-date-format.md) | How to change the date format to an unambiguous format, e.g. to `yyyy-MM-dd`
 | [thunderbird-key-shortcuts.md](https://github.com/berndfinger/tools-and-settings/blob/main/thunderbird-key-shortcuts.md) | How to configure Thunderbird to no longer use single key shortcuts. Helps avoiding loss of data |
 | [vs-code-shortcuts.md](https://github.com/berndfinger/tools-and-settings/blob/main/vs-code-shortcuts.md) | Useful shortcuts in VS Code |
+| [chrome-disable-split-view-drag-and-drop.md](https://github.com/berndfinger/tools-and-settings/blob/main/chrome-disable-split-view-drag-and-drop.md) | Disable the split view drag-and-drop feature in Chrome 143.0.7499.109 |
