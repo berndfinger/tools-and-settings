@@ -2,7 +2,7 @@
   Disable the `split view drag-and-drop on left or right edge of window` feature
 
 **How**:
-  In chrome://settings/appearance, scroll to the bottom and identify the line containing `Allow split view drag-and-drop on left or right edge of window`. Then, click on the blue switch to disable it.
+  In [chrome://settings/appearance](chrome://settings/appearance), scroll to the bottom and identify the line containing `Allow split view drag-and-drop on left or right edge of window`. Then, click on the blue switch to disable it.
 
 **Why?**
   It can happen that when dragging a Chrome tab that instead of it being placed on the desktop, it will be placed side by side of another already open tab. This is unwanted most of the time.
