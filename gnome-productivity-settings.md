@@ -22,6 +22,14 @@ For **automatically raising a windows under the mouse**, run:
 
 `gsettings set org.gnome.desktop.wm.preferences auto-raise true`
 
-These three changes will become effective immediately, without having to restart the applications.
+For **changing the focus auto-raise delay from the default of 500 to 300**, run:
+
+`gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 300`
+
+For **raising a windows under the mouse also by clicking in it with the left mouse key** (this behavior might have been turned off), run:
+
+`gsettings set org.gnome.desktop.wm.preferences raise-on-click true`
+
+All these changes will become effective immediately, without having to restart the applications.
 
 Note: For displaying the current settings, you can replace `set` by `get` and omit the last argument in the above commands.
