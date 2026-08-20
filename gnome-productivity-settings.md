@@ -26,7 +26,7 @@ For **changing the focus auto-raise delay from the default of 500 to 300**, run:
 
 `gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 300`
 
-For **raising a windows under the mouse also by clicking in it with the left mouse key** (this behavior might have been turned off), run:
+For **raising a window under the mouse also by clicking in it with the left mouse key** (this behavior might have been turned off), run:
 
 `gsettings set org.gnome.desktop.wm.preferences raise-on-click true`
 
