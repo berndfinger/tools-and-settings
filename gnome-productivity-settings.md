@@ -30,6 +30,14 @@ For **raising a window under the mouse also by clicking in it with the left mous
 
 `gsettings set org.gnome.desktop.wm.preferences raise-on-click true`
 
+For **avoiding a popup ("toast") to be displayed each time <ctrl>c is pressed in a Gnome Terminal window**, run:
+
+`gsettings set org.gnome.Ptyxis toast-on-copy-clipboard false`
+
+For **enabling middle mouse key pasting**, run:
+
+`gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true`
+
 All these changes will become effective immediately, without having to restart the applications.
 
 Note: For displaying the current settings, you can replace `set` by `get` and omit the last argument in the above commands.
