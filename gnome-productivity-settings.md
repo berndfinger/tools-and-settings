@@ -41,3 +41,27 @@ For **enabling middle mouse key pasting**, run:
 All these changes will become effective immediately, without having to restart the applications.
 
 Note: For displaying the current settings, you can replace `set` by `get` and omit the last argument in the above commands.
+
+---
+
+**Ansible**
+
+For **being able to read the FAILED lines of the output of an ansible-playbook run in a Gnome Terminal**, create a file `~/.ansible.cfg`
+(or modify it if there is already one), with the following content:
+```
+[colors]
+highlight    = white
+verbose      = bright blue
+warn         = bright purple
+error        = red
+debug        = bright gray
+deprecate    = purple
+skip         = cyan
+unreachable  = red
+ok           = green
+changed      = yellow
+diff_add     = green
+diff_remove  = red
+diff_lines   = cyan
+```
+
