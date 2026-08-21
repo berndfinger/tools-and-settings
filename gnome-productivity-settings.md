@@ -38,6 +38,16 @@ For **enabling middle mouse key pasting**, run:
 
 `gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true`
 
+For **disabling the caps lock key**, run:
+
+- if `gsettings get org.gnome.desktop.input-sources xkb-options` displays the result `@as []`:
+
+`gsettings set org.gnome.desktop.input-sources xkb-options "['caps:none']"`
+
+- else:
+
+`gsettings set org.gnome.desktop.input-sources xkb-options "['existing:opt', 'caps:none']"`
+
 All these changes will become effective immediately, without having to restart the applications.
 
 Note: For displaying the current settings, you can replace `set` by `get` and omit the last argument in the above commands.
